@@ -1,0 +1,14 @@
+.about {
+    display: flex;
+    min-height: 100vh;
+}
+
+.about--section {
+    h2 {
+        font-size: $xl-size;
+        margin: 0;
+    }
+    p {
+        font-size: $m-size;
+    }
+}
