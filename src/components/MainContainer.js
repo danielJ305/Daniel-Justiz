@@ -1,20 +1,23 @@
 import React from 'react';
+import AboutIntro from './AboutIntro'
 import AboutMe from './AboutMe';
-import MyPlan from './MyPlan';
-import Skills from './Skills';
+import Experience from './Experience';
 import WorkShowcase from './WorkShowcase';
+
 
 class MainContainer extends React.Component {
 
     render = () => (
         <div className="main-container">
             <div className="about">
-                <div className="about--section">
+                <div className="about--section about--section-intro">
+                    <AboutIntro />
+                </div>
+                <div className="about--section about--section-aboutme">
                     <AboutMe />
-                    <MyPlan />
                 </div>
                 <div className="about--section">
-                    <Skills />
+                    <Experience />
                 </div>
             </div>
             <div className="work-showcase">
