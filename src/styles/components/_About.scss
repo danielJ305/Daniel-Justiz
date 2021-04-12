@@ -2,11 +2,12 @@
     max-width: 700px;
     width: 100%;
     margin: auto;
+    padding: 0 2.5rem 0 2.5rem;
 }
 
 .about--section {
     display: flex;
-    padding:10rem 2.5rem 10rem 2.5rem;
+    padding:10rem 0 10rem 0;
 
     h2 {
         font-size: $xl-size;
@@ -19,7 +20,7 @@
 
 .about--section-intro {
     min-height: 100vh;
-    padding: 15rem 2.5rem 0rem 2.5rem;
+    padding: 15rem 0 0 0;
 }
 
 .about--section-aboutme {

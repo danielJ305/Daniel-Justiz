@@ -6,7 +6,7 @@
     
     margin-left: 0;
     transition-property: margin-left;
-    transition-duration: 1s;
+    transition-duration: 0.8s;
     transition-timing-function: ease-in-out;
 
     position: fixed;
@@ -46,19 +46,12 @@
 
 .mid-container__toggle-btn {
     & a {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background: sandybrown;
-        border-radius: 50%;
-        width: $xl-size;
-        height: $xl-size;
-        cursor: pointer;
+        @extend %button;
     }
 }
 
 .sidebar--bottom-container {
-
+    
 }
 
 
@@ -69,4 +62,22 @@
 }
 .main-container--center {
     margin-left: 0rem;
+}
+
+.sidebar-toggle {
+    position: absolute;
+    top:50%;
+    left: 0;
+    margin-left: -5rem;
+    @extend %button;
+    transition-property: margin-left;
+    transition-duration: 0.6s;
+    transition-timing-function: ease-out;
+    transition-delay: 0s;
+    position: fixed;
+}
+
+.sidebar-toggle-open {
+    margin-left: 5rem;
+    transition-delay: 0.6s;
 }

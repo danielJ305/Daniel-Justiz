@@ -1,3 +1,19 @@
 .work__title {
     font-size: $xl-size;
+    margin-bottom: 0;
 }
+
+.work__subtitle {
+    font-size: $m-size + 0.2rem;
+}
+
+.work-header--toggle-section {
+    display: flex;
+    align-items: center;
+}
+
+.work-button {
+    @extend %button;
+    margin: 0 1rem;
+}
+
