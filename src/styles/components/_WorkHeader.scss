@@ -21,7 +21,11 @@
     margin: 0 1rem;
 }
 
-.work--header-icon {
-    font-weight: 700;
-    font-size: $m-size;
+.button-icon {
+    font-size: $l-size * 0.9;
+    
+}
+
+.toggle-section__text {
+    font-size: $l-size * 0.8;
 }

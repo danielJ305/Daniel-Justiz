@@ -1,6 +1,9 @@
 import React from 'react';
+import { RiArrowDropRightFill } from "react-icons/ri";
 import Sidebar from './Sidebar';
-import MainContainer from './MainContainer'
+import MainContainer from './MainContainer';
+
+
 
 export default class DjWebsite extends React.Component {
         state = {
@@ -31,7 +34,7 @@ export default class DjWebsite extends React.Component {
                 sidebarToggle={this.sidebarToggle}
             />
             <MainContainer />
-            <a className="sidebar-toggle" onClick={this.sidebarToggle}>Open</a>
+            <a className="sidebar-toggle" onClick={this.sidebarToggle}><RiArrowDropRightFill className="button-icon"/></a>
         </div>
     )
 }

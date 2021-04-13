@@ -1,5 +1,5 @@
 import React from 'react';
-import { AiOutlineRight } from "react-icons/ai";
+import { RiArrowDropRightFill } from "react-icons/ri";
 
 const WorkHeader = (props) => (
     <div className="work-header">
@@ -10,7 +10,7 @@ const WorkHeader = (props) => (
             <label className="toggle-section__text">Web Development</label>
             : <label className="toggle-section__text">Graphic Design</label> }
             
-            <a className="work-button" onClick={props.workToggler}><AiOutlineRight className="work--header-icon" /></a>
+            <a className="work-button" onClick={props.workToggler}><RiArrowDropRightFill className="button-icon" /></a>
             
             { props.state ? 
             <label className="toggle-section__text">Graphic Design</label> 

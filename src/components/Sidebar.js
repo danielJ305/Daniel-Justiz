@@ -1,4 +1,5 @@
 import React from 'react';
+import { RiArrowDropLeftFill } from "react-icons/ri";
 
 const Sidebar = (props) => (
     <div className="sidebar">
@@ -20,7 +21,7 @@ const Sidebar = (props) => (
                 <a>My Work</a>
             </div>
             <div className="mid-container__toggle-btn">
-                <a onClick={props.sidebarToggle}>Close</a>
+                <a onClick={props.sidebarToggle}><RiArrowDropLeftFill className="button-icon" /></a>
             </div>
         </div>
         <div className="sidebar--bottom-container">bottom</div>
