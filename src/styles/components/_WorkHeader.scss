@@ -1,3 +1,7 @@
+.work-header {
+    padding:10rem 0 3rem 0;
+}
+
 .work__title {
     font-size: $xl-size;
     margin-bottom: 0;
@@ -17,3 +21,7 @@
     margin: 0 1rem;
 }
 
+.work--header-icon {
+    font-weight: 700;
+    font-size: $m-size;
+}

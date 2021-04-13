@@ -5,7 +5,7 @@ import WorkGraphic from './WorkGraphic';
 
 class WorkShowcase extends React.Component {
     state = {
-        active: false
+        active: true
     }
 
     workToggler = () => {
@@ -15,13 +15,15 @@ class WorkShowcase extends React.Component {
     render = () => (
         <div>
             <WorkHeader
+                state={this.state.active}
                 workToggler={this.workToggler}
             />
             { this.state.active ? <WorkDeveloper /> : <WorkGraphic />}
 
         </div>
-    )
+    ) 
 }
 
 export default WorkShowcase;
 
+// ******************************** (Missing label toggler)
