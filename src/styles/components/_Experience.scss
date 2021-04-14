@@ -1,0 +1,72 @@
+.experience-container {
+    display: flex;
+    margin-top: 4rem;
+}
+
+.experience__job--title {
+    flex-grow: 1;
+    margin-right: 3rem;
+}
+
+.job--title__container {
+    font-size: $m-size * 0.9;
+    width: 16rem;
+    padding: 1.4rem 0 1.4rem 0;
+    cursor: pointer;
+    font-weight: 550;
+    border: none;
+    background: none;
+    border-left: solid 0.4rem black;
+    transition-property: background;
+    transition-duration: 0.15s;
+    transition-timing-function: ease-in-out;
+}
+.job--title__container:hover {
+    background: rgb(196, 196, 196);
+}
+
+
+.experience__job--description {
+    flex-grow: 2;
+    
+    h3 {
+        display: inline;
+        font-size: $l-size * 0.6;
+        padding-right: 1rem;
+    }
+
+    h4 {
+        font-size: $m-size;
+        margin: 1rem 0 1rem 0;
+    }
+
+    p {
+        margin: 0;
+        margin-top: 2.5rem;
+        font-size: $m-size;
+    }
+}
+
+.experience__job--skills {
+    flex-grow: 1;
+    margin-left: 4rem;
+    padding: 2rem 4rem 2rem 4rem;
+    background: rgb(232, 232, 232);
+
+    h3 {
+        font-size: $l-size;
+        margin: 0;
+        padding-bottom: 1.4rem;
+    }
+
+    ul {
+        margin: 0;
+        padding:0;
+
+        li {
+            list-style: none;
+            font-size: $m-size;
+            padding-bottom: 0.8rem;
+        }
+    }
+}

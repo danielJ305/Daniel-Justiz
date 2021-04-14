@@ -1,0 +1,14 @@
+.footer {
+    @extend %inner-container;
+    @extend %section-spacing;
+    padding-bottom: 1rem;
+}
+
+.footer-wrapper {
+    width: 100%;
+}
+
+.footer_text {
+    text-align: center;
+    font-size: $m-size * 0.8;
+}

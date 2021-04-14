@@ -1,6 +1,4 @@
 .work-showcase {
-    max-width: 1000px;
-    width: 100%;
-    margin: auto;
-    padding: 0 2.5rem 0 2.5rem;
+    @extend %inner-container;
+    @extend %section-spacing;
 }
