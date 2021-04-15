@@ -8,8 +8,8 @@
     "serve": "live-server public/",
     "build": "webpack",
     "dev-server": "webpack serve",
-    "predeploy": "npm build",
-    "deploy": "gh-pages -d build"
+    "predeploy": "npm run",
+    "deploy": "gh-pages -d run"
   },
   "author": "Daniel Justiz",
   "license": "ISC",
