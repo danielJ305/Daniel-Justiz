@@ -1,12 +1,15 @@
 {
   "name": "personal-website-v2",
   "version": "1.0.0",
+  "homepage": "https://danielj305.github.io/Daniel-Justiz/",
   "description": "Personal Website / Portfolio",
   "main": "app.js",
   "scripts": {
     "serve": "live-server public/",
     "build": "webpack",
-    "dev-server": "webpack serve"
+    "dev-server": "webpack serve",
+    "predeploy": "npm build",
+    "deploy": "gh-pages -d build"
   },
   "author": "Daniel Justiz",
   "license": "ISC",
