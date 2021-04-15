@@ -5,6 +5,7 @@
   "description": "Personal Website / Portfolio",
   "main": "app.js",
   "scripts": {
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "serve": "live-server public/",
     "build": "webpack",
