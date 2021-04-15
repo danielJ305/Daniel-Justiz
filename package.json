@@ -4,9 +4,9 @@
   "description": "Personal Website / Portfolio",
   "main": "app.js",
   "scripts": {
-    "dev": "webpack serve",
-    "start": "node server.js",
-    "build": "webpack --mode production"
+    "serve": "live-server public/",
+    "build": "webpack",
+    "dev-server": "webpack serve"
   },
   "author": "Daniel Justiz",
   "license": "ISC",
