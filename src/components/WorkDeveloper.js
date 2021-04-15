@@ -1,7 +1,7 @@
 import React from 'react';
 import WorkProject from './WorkProject';
-import fiuImg from '../Media/fiu-mockup1.jpg';
-import noteTaking from '../Media/notetakingapp.jfif'
+import fiuImg from './../Media/fiu-mockup1.jpg';
+import noteTaking from './../Media/notetakingapp.jfif'
 
 class WorkDeveloper extends React.Component {
     project = {
