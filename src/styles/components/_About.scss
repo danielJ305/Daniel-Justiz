@@ -4,6 +4,7 @@
 
 .about--section {
     @extend %section-spacing;
+    box-sizing: border-box;
 
     h2 {
         font-size: $xl-size;
@@ -17,9 +18,50 @@
 .about--section-intro {
     min-height: 100vh;
     padding: 15rem 0 0 0;
+
+    h3 {
+        font-size: $m-size * 1.1;
+    }
     
+    h1 {
+        font-size: $xl-size * 1.3;
+        margin: 0 0 1rem 0;
+    }
+
+    h2 {
+        font-size: $xl-size * 1.3;
+    }
+
+    p {
+        margin-top: 3rem;
+        width: 50rem;
+    }
+
+    button.contact__button {
+        margin-top: 2rem;
+        width: 12rem;
+    }
 }
 
 .about--section-aboutme {
     padding-top: 0;
+}
+
+.aboutme-wrapper {
+    display: flex;
+}
+
+.aboutme--text {
+    flex: 3;
+    padding-right: 3rem;
+}
+
+.aboutme--image {
+    flex: 2;
+    
+    img {
+        margin-left: 2rem;
+        width: 80%;
+        height: 100%;
+    }
 }

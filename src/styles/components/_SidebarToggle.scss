@@ -1,0 +1,55 @@
+// Sidebar Open/Close
+.sidebar--close {
+    margin-left: -35rem;
+}
+
+.main-container--center {
+    margin-left: 0rem;
+}
+
+.sidebar-toggle {
+    // width: 100vw;
+    height: 100vh;
+    position: relative;
+    padding: 2rem 0 2rem 0;
+    // left: 0;
+    margin-left: -5rem;
+    transition-property: margin-left;
+    transition-duration: 0.6s;
+    transition-timing-function: ease-out;
+    transition-delay: 0s;
+    position: fixed;
+}
+
+.sidebar-toggle__social-list {
+    position: absolute;
+    padding-left: 1.5rem;
+}
+
+.sidebar-toggle__button {
+    position: absolute;
+    top: 50%;
+
+    a {
+        @extend %button;
+    }
+}
+
+.sidebar-toggle__email {
+    position: absolute;
+    top: 63%;
+    padding-left: 1.5rem;
+    
+    a {
+        writing-mode: vertical-rl;
+        font-size: 14px;
+        font-weight: 500;
+        transform: rotate(-180deg);
+        letter-spacing: 2px;
+    }
+}
+
+.sidebar-toggle-open {
+    margin-left: 4rem;
+    transition-delay: 0.6s;
+}

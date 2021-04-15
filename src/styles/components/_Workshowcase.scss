@@ -1,4 +1,5 @@
 .work-showcase {
     @extend %inner-container;
     @extend %section-spacing;
+    box-sizing: border-box;
 }

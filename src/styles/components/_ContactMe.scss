@@ -1,6 +1,7 @@
 .contact {
     @extend %inner-container;
     @extend %section-spacing;
+    box-sizing: border-box;
 }
 
 .contact__subtitle {
@@ -26,19 +27,7 @@
 }
 
 .contact__button {
-    text-align: center;
-    border: solid 2px black;
-    width: 10rem;
-    margin: auto;
-    border-radius: 5px;
-    padding: 1.5rem 0 1.5rem 0;
-    font-size: $m-size * 0.9;
-    font-weight: 600;
-    cursor: pointer;
-    background: rgba(0, 0, 0, 0);
-    transition-property: background;
-    transition-duration: 0.2s;
-    transition-timing-function: ease-in-out;
+    @extend %contact-button;
 }
 
 .contact__button:hover {

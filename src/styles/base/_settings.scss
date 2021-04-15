@@ -26,8 +26,24 @@ $xl-size: 4.8rem;
 }
 
 // Section Spacing
-
 %section-spacing {
     display: flex;
     padding:10rem 0 10rem 0;
+}
+
+// Contact Button
+%contact-button {
+    text-align: center;
+    border: solid 2px black;
+    width: 10rem;
+    margin: auto;
+    border-radius: 5px;
+    padding: 1.5rem 0 1.5rem 0;
+    font-size: $m-size * 0.9;
+    font-weight: 600;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0);
+    transition-property: background;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
 }

@@ -6,7 +6,6 @@ import WorkShowcase from './WorkShowcase';
 import ContactMe from './ContactMe';
 import Footer from './Footer';
 
-
 class MainContainer extends React.Component {
 
     render = () => (

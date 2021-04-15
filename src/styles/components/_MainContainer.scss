@@ -9,3 +9,9 @@
     padding: 0 2.5rem 0 2.5rem;
     box-sizing: border-box;
 }
+
+@media only screen and (max-width : 415px) {
+    .main-container {
+        margin: 0;
+    }
+}
