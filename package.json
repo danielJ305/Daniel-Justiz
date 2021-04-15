@@ -5,11 +5,11 @@
   "description": "Personal Website / Portfolio",
   "main": "app.js",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "serve": "live-server public/",
     "build": "webpack",
-    "dev-server": "webpack serve",
-    "predeploy": "npm run",
-    "deploy": "gh-pages -d run"
+    "dev-server": "webpack serve"
   },
   "author": "Daniel Justiz",
   "license": "ISC",
