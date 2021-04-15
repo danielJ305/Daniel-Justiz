@@ -3,27 +3,27 @@
     margin-top: 4rem;
 }
 
-.experience__job--title {
-    flex-grow: 1;
-    margin-right: 3rem;
-}
+// .experience__job--title {
+//     flex-grow: 1;
+//     margin-right: 3rem;
+// }
 
-.job--title__container {
-    font-size: $m-size * 0.9;
-    width: 16rem;
-    padding: 1.4rem 0 1.4rem 0;
-    cursor: pointer;
-    font-weight: 550;
-    border: none;
-    background: none;
-    border-left: solid 0.4rem black;
-    transition-property: background;
-    transition-duration: 0.15s;
-    transition-timing-function: ease-in-out;
-}
-.job--title__container:hover {
-    background: rgb(196, 196, 196);
-}
+// .job--title__container {
+//     font-size: $m-size * 0.9;
+//     width: 16rem;
+//     padding: 1.4rem 0 1.4rem 0;
+//     cursor: pointer;
+//     font-weight: 550;
+//     border: none;
+//     background: none;
+//     border-left: solid 0.4rem black;
+//     transition-property: background;
+//     transition-duration: 0.15s;
+//     transition-timing-function: ease-in-out;
+// }
+// .job--title__container:hover {
+//     background: rgb(196, 196, 196);
+// }
 
 
 .experience__job--description {
@@ -40,7 +40,7 @@
         margin: 1rem 0 1rem 0;
     }
 
-    p {
+    li {
         margin: 0;
         margin-top: 2.5rem;
         font-size: $m-size;

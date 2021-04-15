@@ -1,0 +1,36 @@
+.MuiBox-root {
+    padding-top:0 !important;
+}
+
+.MuiTabs-root {
+    flex: 1 !important;
+    // min-width: 100%;
+}
+
+.tab-info {
+    flex: 3 !important;
+    // min-width: 100%;
+}
+
+.MuiButtonBase-root[type="button"] {
+    font-size: $m-size * 0.8 !important;
+    font-weight: 550 !important;
+    background: none !important;
+    transition-property: background !important;
+    transition-duration: 0.15s !important;
+    transition-timing-function: ease-in-out !important;
+}
+.MuiButtonBase-root[type="button"]:hover {
+    background: rgb(196, 196, 196) !important;
+}
+
+.job--description__list {
+    list-style: none;
+    position: relative;
+}
+.job--description__list::before {
+    content: "▹";
+    position: absolute;
+    left: -30px;
+    color: black;
+}
