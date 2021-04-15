@@ -1,11 +1,10 @@
 {
   "name": "personal-website-v2",
   "version": "1.0.0",
-  "homepage": "https://danielj305.github.io/Daniel-Justiz/",
+  "homepage": "https://danielj305.github.io/Daniel-Justiz",
   "description": "Personal Website / Portfolio",
   "main": "app.js",
   "scripts": {
-    "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "serve": "live-server public/",
     "build": "webpack",
