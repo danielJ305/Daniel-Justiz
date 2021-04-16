@@ -1,5 +1,6 @@
 import React from 'react';
 import ExperienceJobList from './ExperienceJobList';
+import ExperienceJobListMobile from './ExperienceJobList-Mobile';
 
 class Experience extends React.Component {
 
@@ -7,6 +8,7 @@ class Experience extends React.Component {
          <div>
             <h2>Experience / Skills</h2>
             <div className="experience-container">
+                <ExperienceJobListMobile />
                 <ExperienceJobList />
                 <div className="experience__job--skills">
                     <h3>Skills</h3>

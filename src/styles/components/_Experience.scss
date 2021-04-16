@@ -1,12 +1,12 @@
 .experience-container {
-    display: flex;
     margin-top: 4rem;
+    display: flex;
 }
 
-// .experience__job--title {
-//     flex-grow: 1;
-//     margin-right: 3rem;
-// }
+.experience__job--title {
+    flex-grow: 1;
+    margin-right: 3rem;
+}
 
 // .job--title__container {
 //     font-size: $m-size * 0.9;
@@ -70,3 +70,70 @@
         }
     }
 }
+
+@media only screen and (max-width : 924px) {
+    .experience-container {
+        flex-direction: column;
+    }
+
+    .experience__job--skills {
+        margin: 0;
+        margin-top: 3rem;
+    }
+
+}
+
+@media only screen and (max-width : 415px) {
+    .experience-container {
+        flex-direction: column;
+    }
+
+    .joblist-Mobile {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .joblist-Desktop {
+        display: none;
+    }
+
+
+    .experience__job--description {
+        flex: 1;
+    }
+
+    .experience__job--skills {
+        flex: 1;
+        margin: 0;
+    }
+
+    .MuiPaper-root {
+        margin-bottom: 3rem;
+    }
+
+    .MuiButtonBase-root[type="button"] {
+        font-size: $m-size * 0.8 !important;
+        font-weight: 550 !important;
+        background: none !important;
+        transition-property: background !important;
+        transition-duration: 0.15s !important;
+        transition-timing-function: ease-in-out !important;
+    }
+
+    .MuiButtonBase-root[type="button"]:hover {
+        background: rgb(196, 196, 196) !important;
+    }
+
+}
+
+@media only screen and (min-width : 415px) {
+    .joblist-Mobile {
+        display: none;
+    }
+
+    .joblist-Desktop {
+        display: flex;
+    }
+
+}
+

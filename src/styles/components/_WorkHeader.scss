@@ -1,5 +1,5 @@
 .work-header {
-    padding:0 0 3rem 0;
+    margin:0 0 3rem 0;
 }
 
 .work__title {
@@ -28,4 +28,14 @@
 
 .toggle-section__text {
     font-size: $l-size * 0.8;
+}
+
+@media only screen and (max-width : 415px) {
+    .work-header {
+        margin-bottom: 4rem;
+    }
+
+    .toggle-section__text {
+        font-size: $m-size;
+    }
 }

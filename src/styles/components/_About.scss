@@ -17,6 +17,7 @@
 
 .about--section-intro {
     min-height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
     padding: 15rem 0 0 0;
 
     h3 {
@@ -34,7 +35,8 @@
 
     p {
         margin-top: 3rem;
-        width: 50rem;
+        max-width: 50rem;
+        width: 100%;
     }
 
     button.contact__button {
@@ -54,6 +56,10 @@
 .aboutme--text {
     flex: 3;
     padding-right: 3rem;
+
+    p {
+        margin-top: 3rem;
+    }
 }
 
 .aboutme--image {
@@ -63,5 +69,69 @@
         margin-left: 2rem;
         width: 80%;
         height: 100%;
+        object-fit: cover;
+    }
+}
+
+
+@media only screen and (max-width : 415px) {
+    .about--section-intro {
+        h1 {
+            font-size: $xl-size * 0.8;
+        }
+        h2 {
+            font-size: $xl-size;
+        }
+    }
+
+    .aboutme-wrapper {
+        flex-direction: column;
+
+        div:first-child {
+            padding-right:0;
+        }
+
+        & > div {
+            flex: 1;
+        }
+
+        img {
+            margin: 0;
+            margin-top: 2rem;
+        }
+    }
+
+    .aboutme--text {
+
+        h2 {
+            font-size: $xl-size;
+        }
+    }
+    
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1223px) and (orientation : portrait) {
+    .about {
+        max-width: 900px;
+    }
+}
+
+@media only screen and (max-device-width : 768px) {
+    .aboutme-wrapper {
+        flex-direction: column;
+
+        div:first-child {
+            padding-right: 0;
+        }
+
+        &>div {
+            flex: 1;
+        }
+
+        img {
+            margin: 0;
+            margin-top: 2rem;
+            max-width: 30rem;
+        }
     }
 }

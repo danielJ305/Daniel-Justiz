@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core/styles';
+import AppBar from '@material-ui/core/AppBar';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
@@ -13,8 +14,8 @@ function TabPanel(props) {
     <div
       role="tabpanel"
       hidden={value !== index}
-      id={`vertical-tabpanel-${index}`}
-      aria-labelledby={`vertical-tab-${index}`}
+      id={`scrollable-auto-tabpanel-${index}`}
+      aria-labelledby={`scrollable-auto-tab-${index}`}
       {...other}
     >
       {value === index && (
@@ -34,24 +35,20 @@ TabPanel.propTypes = {
 
 function a11yProps(index) {
   return {
-    id: `vertical-tab-${index}`,
-    'aria-controls': `vertical-tabpanel-${index}`,
+    id: `scrollable-auto-tab-${index}`,
+    'aria-controls': `scrollable-auto-tabpanel-${index}`,
   };
 }
 
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
+    width: '100%',
     backgroundColor: theme.palette.background.paper,
-    display: 'flex',
-    height: 346,
-  },
-  tabs: {
-    borderRight: `1px solid ${theme.palette.divider}`,
   },
 }));
 
-export default function VerticalTabs() {
+export default function ScrollableTabsButtonAuto() {
   const classes = useStyles();
   const [value, setValue] = React.useState(0);
 
@@ -60,19 +57,21 @@ export default function VerticalTabs() {
   };
 
   return (
-    <div className={classes.root} className="joblist-Desktop">
-      <Tabs
-        orientation="vertical"
-        variant="scrollable"
-        value={value}
-        onChange={handleChange}
-        aria-label="Vertical tabs example"
-        className={classes.tabs}
-      >
-        <Tab label="Freight Hub Group" {...a11yProps(0)} />
-        {/* <Tab label="N/A" {...a11yProps(1)} /> */}
-      </Tabs>
-      <TabPanel className="tab-info" value={value} index={0}>
+    <div className={classes.root} className="joblist-Mobile">
+      <AppBar position="static" color="default">
+        <Tabs
+          value={value}
+          onChange={handleChange}
+          indicatorColor="primary"
+          textColor="primary"
+          variant="scrollable"
+          scrollButtons="auto"
+          aria-label="scrollable auto tabs example"
+        >
+          <Tab label="Item One" {...a11yProps(0)} />
+        </Tabs>
+      </AppBar>
+      <TabPanel className="Freight Hub Group" value={value} index={0}>
         <div className="experience__job--description"> 
             <h3>Web Designer / Content Creator at</h3><h3>Freight Hub Group</h3>
             <h4>October 2019 - Present</h4>
@@ -86,9 +85,6 @@ export default function VerticalTabs() {
             </ul>
         </div>
       </TabPanel>
-      {/* <TabPanel className="tab-info" value={value} index={1}>
-        Item Two
-      </TabPanel> */}
     </div>
   );
 }

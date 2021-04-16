@@ -1,6 +1,7 @@
 .work-project {
     display: flex;
     margin-bottom: 10rem;
+
 }
 
 // .work-project:nth-child(even) {
@@ -9,16 +10,19 @@
 
 .project--image-container {
     max-width: 55rem;
+
 }
 
 .project__image {
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
 .project--text {
     padding: 0 0 0 2rem;
     text-align: right;
+
 }
 
 // .project--text:nth-child(even) {
@@ -64,4 +68,35 @@
 }
 .project--text__icon:hover {
     color:rgb(29, 121, 29);
+}
+
+@media only screen and (max-width : 1023px) {
+    .work-project {
+        position: relative;
+        margin-bottom: 2.5rem;
+    }
+
+    .project--image-container {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .project__image {
+        border-radius: 5px;
+    }
+
+    .project--text {
+        z-index: 10;
+        padding: 3rem 1rem 3rem 2rem;
+        text-align: left;
+        border-radius: 5px;
+        width: 100%;
+        background: rgba(240, 230, 140, 0.672);
+    }
+
+    .project--text__description {
+        margin-left: 0;
+    }
 }
