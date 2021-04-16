@@ -1,5 +1,5 @@
 import React from 'react';
-import morty from '../Media/Morty.png'
+import morty from '../../public/Media/Morty.png'
 
 const AboutMe = () => (
     <div className="aboutme-wrapper">

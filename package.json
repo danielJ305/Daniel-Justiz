@@ -6,7 +6,9 @@
   "scripts": {
     "serve": "live-server public/",
     "build": "webpack",
-    "dev-server": "webpack serve"
+    "dev-server": "webpack serve",
+    "start": "node server/server.js",
+    "heroku-postbuild": "npm run build"
   },
   "author": "Daniel Justiz",
   "license": "ISC",

@@ -1,20 +1,20 @@
 import React from 'react';
 import Gallery from 'react-grid-gallery';
 
-import lous from './../Media/Graphics/lous-hoby.jpg';
-import learn from './../Media/Graphics/learn_v2.jpg';
-import moving from './../Media/Graphics/WeAreMoving.jpg';
-import walk from './../Media/Graphics/Walk-A-Thon(WEB).jpg';
-import nature from './../Media/Graphics/natmockup.jpg';
-import port from './../Media/Graphics/cover(Florida-Ports).jpg';
-import logistics from './../Media/Graphics/Logistics-hubPaper.jpg';
-import ad from './../Media/Graphics/GoogleRetarget.jpg';
-import baobab from './../Media/Graphics/baobab.jpg';
-import whse from './../Media/Graphics/123WHSE.jpg';
-import narjol from './../Media/Graphics/narjolcr.jpg';
-import ltl from './../Media/Graphics/webLTL.jpg';
-import pdf2 from './../Media/Graphics/PDF2.jpg';
-import pdf3 from './../Media/Graphics/PDF3.jpg';
+import lous from '../../public/Media/Graphics/lous-hoby.jpg';
+import learn from '../../public/Media/Graphics/learn_v2.jpg';
+import moving from '../../public/Media/Graphics/WeAreMoving.jpg';
+import walk from '../../public/Media/Graphics/Walk-A-Thon(WEB).jpg';
+import nature from '../../public/Media/Graphics/natmockup.jpg';
+import port from '../../public/Media/Graphics/cover(Florida-Ports).jpg';
+import logistics from '../../public/Media/Graphics/Logistics-hubPaper.jpg';
+import ad from '../../public/Media/Graphics/GoogleRetarget.jpg';
+import baobab from '../../public/Media/Graphics/baobab.jpg';
+import whse from '../../public/Media/Graphics/123WHSE.jpg';
+import narjol from '../../public/Media/Graphics/narjolcr.jpg';
+import ltl from '../../public/Media/Graphics/webLTL.jpg';
+import pdf2 from '../../public/Media/Graphics/PDF2.jpg';
+import pdf3 from '../../public/Media/Graphics/PDF3.jpg';
 
 export default class WorkGraphic extends React.Component {
     IMAGES = [
