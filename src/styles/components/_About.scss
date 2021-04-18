@@ -17,8 +17,8 @@
 
 .about--section-intro {
     min-height: 100vh;
-    height: calc(var(--vh, 1vh) * 100);
-    padding: 15rem 0 0 0;
+    // height: calc(var(--vh, 1vh) * 100);
+    padding: 15rem 0 10rem 0;
 
     h3 {
         font-size: $m-size * 1.1;
@@ -110,7 +110,7 @@
     
 }
 
-@media only screen and (min-device-width : 768px) and (max-device-width : 1223px) and (orientation : portrait) {
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
     .about {
         max-width: 900px;
     }

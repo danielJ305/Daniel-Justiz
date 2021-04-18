@@ -8,9 +8,10 @@
     transition-timing-function: ease-in-out;
     padding: 0 2.5rem 0 2.5rem;
     box-sizing: border-box;
+    // height: calc(var(--vh, 1vh) * 100);
 }
 
-@media only screen and (max-width : 1223px) {
+@media only screen and (max-width : 1024px) {
     .main-container {
         margin: 0;
     }
