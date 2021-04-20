@@ -30,30 +30,20 @@ export default class DjWebsite extends React.Component {
     }
 
     mobileToggle = () => {
-        const mobileMenu = document.querySelector('.mobile-menu');
-
         this.setState(() => ({
             mobileOpened: !this.state.mobileOpened
         }));
-
-        if (this.state.mobileOpened === true) {
-            mobileMenu.className += " mobile-menu-opened";
-        } else if (this.state.mobileOpened === false) {
-            mobileMenu.remove('mobile-menu-opened');
-        }
-
     }
 
     
     render = () => (
         <div className="main-body-wrapper">
             <MobileBurger 
-                mobileOpened={this.state.mobileOpened}
+                open={this.state.mobileOpened}
                 mobileToggle={this.mobileToggle}
             />
             <MobileMenu
-                mobileOpened={this.state.mobileOpened} 
-                mobileToggle={this.mobileToggle}
+                open={this.state.mobileOpened}
             />
             <Sidebar
                 sidebarToggle={this.sidebarToggle}
