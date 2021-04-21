@@ -24,6 +24,10 @@
 .sidebar-toggle__social-list {
     position: absolute;
     padding-left: 1.5rem;
+
+    a {
+        color: $light;
+    }
 }
 
 .sidebar-toggle__button {
@@ -39,6 +43,7 @@
     position: absolute;
     bottom: 7%;
     padding-left: 1.5rem;
+    color: $light;
     
     a {
         writing-mode: vertical-rl;

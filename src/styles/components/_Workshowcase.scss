@@ -2,7 +2,37 @@
     @extend %inner-container;
     @extend %section-spacing;
     box-sizing: border-box;
+
+    h1 {
+        color: $light;
+    }
+
+    h2 {
+        color: $light;
+    }
+
+    h3 {
+        color: $light;
+    }
+
+    h4 {
+        color: $light;
+    }
+
+    a {
+        color: $light;
+    }
+
+    p {
+        color: $light;
+    }
+
+    label {
+        color: $light;
+    }
 }
+
+
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1224px) and (orientation : portrait) {
     .work-showcase {

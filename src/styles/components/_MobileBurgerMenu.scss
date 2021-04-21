@@ -1,0 +1,16 @@
+.mobile-menu--resume-container {
+    margin-top: 6rem;
+    text-align: center
+}
+
+@media (min-width: 416px) {
+    .mobile-menu--resume-container {
+        text-align: left;
+    }
+}
+
+a.resume-container__button {
+    @extend %contact-button;
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+}

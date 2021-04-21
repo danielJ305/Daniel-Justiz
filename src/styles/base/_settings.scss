@@ -4,6 +4,9 @@ $m-size: 1.6rem;
 $l-size: 3.2rem;
 $xl-size: 4.8rem;
 
+// colors
+$dark: #1B1B1B;
+$light: white;
 
 // Placeholders
 // button
@@ -11,7 +14,7 @@ $xl-size: 4.8rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: sandybrown;
+    background: $light;
     border-radius: 50%;
     width: $xl-size;
     height: $xl-size;
@@ -34,7 +37,8 @@ $xl-size: 4.8rem;
 // Contact Button
 %contact-button {
     text-align: center;
-    border: solid 2px black;
+    border: solid 2px $light;
+    color: $light;
     width: 10rem;
     margin: auto;
     border-radius: 5px;
@@ -42,8 +46,12 @@ $xl-size: 4.8rem;
     font-size: $m-size * 0.9;
     font-weight: 600;
     cursor: pointer;
-    background: rgba(0, 0, 0, 0);
+    background: none;
     transition-property: background;
     transition-duration: 0.2s;
     transition-timing-function: ease-in-out;
+
+    &:hover {
+        background: rgb(189, 189, 189);
+    }
 }

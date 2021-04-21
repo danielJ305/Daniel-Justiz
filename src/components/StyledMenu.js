@@ -8,10 +8,11 @@ export const StyledMenu = styled.nav`
     height: 100vh;
     text-align: left;
     padding: 2rem;
-    position: absolute;
+    position: fixed;
+    z-index:1500;
     top: 0;
     left: 0;
-    transform: translateX(-100%);
+    transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(-100%)'};
     transition: transform 0.3s ease-in-out;
 
     @media only screen and (max-device-width : 768px) {
@@ -38,7 +39,7 @@ export const StyledMenu = styled.nav`
         }
     }
 
-    transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(-100%)'};
+
 `;
 
 

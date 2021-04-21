@@ -25,6 +25,7 @@ const Sidebar = (props) => (
             </div>
         </div>
         <div className="sidebar--bottom-container">
+            <a className="bottom-container__resume">RESUME</a>
             <a>danieljustiz9508@gmail.com</a>
             <p>Miami, FL</p>
         </div>

@@ -2,6 +2,34 @@
     @extend %inner-container;
     @extend %section-spacing;
     box-sizing: border-box;
+
+    h1 {
+        color: $light;
+    }
+
+    h2 {
+        color: $light;
+    }
+
+    h3 {
+        color: $light;
+    }
+
+    h4 {
+        color: $light;
+    }
+
+    a {
+        color: $light;
+    }
+
+    p {
+        color: $light;
+    }
+
+    label {
+        color: $light;
+    }
 }
 
 .contact__subtitle {
@@ -30,9 +58,6 @@
     @extend %contact-button;
 }
 
-.contact__button:hover {
-    background: rgb(189, 189, 189);
-}
 
 .contact-wrapper {
     width: 100%;

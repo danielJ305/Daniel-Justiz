@@ -1,14 +1,14 @@
 import React from 'react';
+import background from '../../public/Media/dark-BG-texture.jpg';
 import Sidebar from './Sidebar';
 import MainContainer from './MainContainer';
 import SidebarToggle from './SidebarToggle';
-import MobileBurger from './MobileBurger';
-import MobileMenu from './MobileMenu';
+import MobileBurgerMenu from './MobileBurgerMenu';
+
 export default class DjWebsite extends React.Component {
     // Desktop Sidebar   
     state = {
         sidebarOpened: true,
-        mobileOpened: false
     }
 
     sidebarToggle = () => {
@@ -29,22 +29,11 @@ export default class DjWebsite extends React.Component {
         }
     }
 
-    mobileToggle = () => {
-        this.setState(() => ({
-            mobileOpened: !this.state.mobileOpened
-        }));
-    }
-
+    // style={{ backgroundImage: `url(${background})` }}
     
     render = () => (
-        <div className="main-body-wrapper">
-            <MobileBurger 
-                open={this.state.mobileOpened}
-                mobileToggle={this.mobileToggle}
-            />
-            <MobileMenu
-                open={this.state.mobileOpened}
-            />
+        <div className="main-body-wrapper" >
+            <MobileBurgerMenu />
             <Sidebar
                 sidebarToggle={this.sidebarToggle}
             />

@@ -20,8 +20,17 @@
     transition-duration: 0.15s !important;
     transition-timing-function: ease-in-out !important;
 }
+
 .MuiButtonBase-root[type="button"]:hover {
     background: rgb(196, 196, 196) !important;
+}
+
+.MuiButtonBase-root {
+    color: $light !important;
+
+    &:hover {
+        color: $dark !important;
+    }
 }
 
 .job--description__list {
@@ -32,5 +41,5 @@
     content: "▹";
     position: absolute;
     left: -30px;
-    color: black;
+    color: $light;
 }

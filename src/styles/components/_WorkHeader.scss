@@ -19,6 +19,10 @@
 .work-button {
     @extend %button;
     margin: 0 1rem;
+
+    svg {
+        color: $dark ;
+    }
 }
 
 .button-icon {

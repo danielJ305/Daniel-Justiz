@@ -6,12 +6,26 @@
     @extend %section-spacing;
     box-sizing: border-box;
 
+    h1 {
+        color: $light;
+    }
     h2 {
         font-size: $xl-size;
         margin: 0;
+        color: $light;
+    }
+    h3 {
+        color: $light;
+    }
+    h4 {
+        color: $light;
+    }
+    a {
+        color: $light;
     }
     p {
         font-size: $m-size;
+        color: $light;
     }
 }
 

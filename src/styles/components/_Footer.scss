@@ -3,6 +3,33 @@
     @extend %section-spacing;
     padding-bottom: 1rem;
     
+    h1 {
+        color: $light;
+    }
+
+    h2 {
+        color: $light;
+    }
+
+    h3 {
+        color: $light;
+    }
+
+    h4 {
+        color: $light;
+    }
+
+    a {
+        color: $light;
+    }
+
+    p {
+        color: $light;
+    }
+
+    label {
+        color: $light;
+    }
 }
 
 .footer-wrapper {

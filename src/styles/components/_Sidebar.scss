@@ -1,5 +1,5 @@
 .sidebar {
-    background-color: lightblue;
+    background-color: $light;
     min-height: 100vh;
     max-width: 35rem;
     width: 100%;
@@ -31,7 +31,7 @@
         font-size: 2.5rem;
         padding-bottom: 2rem;
         cursor: pointer;
-
+        color: $dark;
     }
 }
 
@@ -55,24 +55,43 @@
         transition-property: color;
         transition-duration: 0.2s;
         transition-timing-function: ease-in-out;
+        color: $dark;
     }
 
     & a:hover {
-        color:chocolate
+        color: #949494;
     }
 }
 
 .mid-container__toggle-btn {
     & a {
         @extend %button;
+        color: $light;
+        background: $dark;
     }
 }
 
 .sidebar--bottom-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
     font-size: $m-size;
 
     a {
         font-weight: 600;
+        color: $dark;
+    }
+
+    p {
+        color: $dark;
+    }
+
+    .bottom-container__resume {
+        @extend %contact-button;
+        margin: 0;
+        margin-bottom: 2rem;
+        color: $dark;
+        border-color: $dark;
     }
 }
 
