@@ -58,3 +58,19 @@
     margin-left: 4rem;
     transition-delay: 0.6s;
 }
+
+
+// *********** Side bar Logo **//
+
+.sidebar-logo {
+    position: absolute !important;
+    top: 2rem;
+    right: -10rem;
+    transition-property: right;
+    transition-duration: 0.6s;
+    transition-timing-function: ease-out;
+}
+
+.sidebar-logo-open {
+    right: 3rem;
+}

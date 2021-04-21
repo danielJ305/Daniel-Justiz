@@ -36,6 +36,7 @@
 
     h3 {
         font-size: $m-size * 1.1;
+        color: opacify($highlight, 0.1);
     }
     
     h1 {

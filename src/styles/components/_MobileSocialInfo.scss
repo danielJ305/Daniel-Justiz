@@ -1,0 +1,44 @@
+.mobile-social-info {
+    @extend %inner-container;
+}
+
+.mobile-social-wrapper {
+    @extend %section-spacing;
+    padding-top:0;
+}
+
+.mobile-social__list {
+    display: flex;
+    justify-content: center;
+
+    a {
+        color: $light;
+        font-size: 3.5rem;
+        cursor: pointer;
+        padding: 0 2rem 0 2rem;
+    }
+}
+
+.mobile-social__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: $m-size;
+    text-align: center;
+    color: $light;
+
+    a.mobile-social__resume {
+        @extend %contact-button;
+
+        margin-top:3rem;
+        margin-bottom:3rem;
+
+    }
+}
+
+
+@media only screen and (min-width : 1223px) {
+    .mobile-social-info {
+        display: none;
+    }
+}

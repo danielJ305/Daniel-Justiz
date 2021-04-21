@@ -7,8 +7,8 @@ export const StyledBurger = styled.nav`
     display: none;
     flex-direction: column;
     justify-content: space-around;
-    width: 2rem;
-    height: 2rem;
+    width: 3rem;
+    height: 3rem;
     background: transparent;
     border: none;
     cursor: pointer;
@@ -20,9 +20,9 @@ export const StyledBurger = styled.nav`
     }
 
     div {
-        width: 2rem;
-        height: 0.25rem;
-        background: black;
+        width: 3rem;
+        height: 0.50rem;
+        background: white;
         border-radius: 10px;
         transition: all 0.3s linear;
         position: relative;
@@ -42,7 +42,7 @@ export const StyledBurger = styled.nav`
         }
     }
 
-    @media only screen and (max-device-width : 1024px) {
+    @media only screen and (max-device-width : 1223px) {
         display: flex;
     }
 `;

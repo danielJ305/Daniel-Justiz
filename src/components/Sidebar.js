@@ -1,4 +1,6 @@
 import React from 'react';
+import Logo from '../../public/Media/DJ-logo-01.svg';
+
 import { RiArrowDropLeftFill, RiBehanceFill, RiGithubFill, RiInstagramLine, RiLinkedinBoxLine } from "react-icons/ri";
 
 const Sidebar = (props) => (
@@ -10,8 +12,8 @@ const Sidebar = (props) => (
                 <a><RiInstagramLine/></a>
                 <a><RiBehanceFill/></a>
             </div>
-            <div>
-                LOGO
+            <div className="top-container__logo">
+                <Logo className="logo" />
             </div>
         </div>
         <div className="sidebar--mid-container">

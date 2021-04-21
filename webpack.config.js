@@ -26,7 +26,10 @@ module.exports = {
                     loader: 'file-loader'
                 }
             ]
-        }]
+        }, {
+            test: /\.svg$/,
+            use: ['@svgr/webpack'],
+      }]
     },
     devtool: 'eval-cheap-module-source-map',
     devServer: {

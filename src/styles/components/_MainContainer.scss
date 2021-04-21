@@ -11,8 +11,24 @@
     // height: calc(var(--vh, 1vh) * 100);
 }
 
-@media only screen and (max-width : 1024px) {
+.main-container__logo {
+    display: none;
+    justify-content: left;
+    color: white;
+    margin-top: 3rem;
+}
+
+.logo {
+    width: 9rem;
+    height: auto;
+}
+
+@media only screen and (max-width : 1223px) {
     .main-container {
         margin: 0;
+    }
+
+    .main-container__logo {
+        display: flex;
     }
 }
