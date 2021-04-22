@@ -33,6 +33,7 @@
 .project--text__subtitle {
     font-size: $m-size;
     margin: 0;
+    color: $highlight !important;
 }
 
 .project--text__title {
@@ -64,10 +65,10 @@
     color:$highlight;
     padding:2rem 0 0 1.5rem;
     transition-property: color;
-    transition-duration: 0.25s;
+    transition-duration: 0.2s;
 }
 .project--text__icon:hover {
-    color: darken($highlight, 20%);
+    color: lighten($highlight-hover, 25%);
 }
 
 @media only screen and (max-width : 1023px) {

@@ -74,7 +74,7 @@ export default function VerticalTabs() {
       </Tabs>
       <TabPanel className="tab-info" value={value} index={0}>
         <div className="experience__job--description"> 
-            <h3>Web Designer / Content Creator at</h3><h3>Freight Hub Group</h3>
+            <h3>Web Designer / Content Creator at</h3><h3 className="highlight">Freight Hub Group</h3>
             <h4>October 2019 - Present</h4>
             <ul>
                 <li className="job--description__list">My daily tasks vary depending on the monthly goal.</li>

@@ -17,12 +17,12 @@
     font-weight: 550 !important;
     background: none !important;
     transition-property: background !important;
-    transition-duration: 0.15s !important;
+    transition-duration: 0.2s !important;
     transition-timing-function: ease-in-out !important;
 }
 
 .MuiButtonBase-root[type="button"]:hover {
-    background: rgb(196, 196, 196) !important;
+    background: $highlight !important;
 }
 
 .MuiButtonBase-root {
@@ -46,4 +46,27 @@
 
 .MuiTabs-indicator {
     background: $highlight !important;
+}
+
+.MuiTabs-root.jss8.MuiTabs-vertical {
+    border-color: rgba(255, 255, 255, 0.05) !important;
+}
+
+// ** Mobile **//
+
+.MuiAppBar-colorDefault {
+    background: none !important;
+}
+
+.MuiPaper-root .MuiAppBar-root {
+     font-size: $m-size * 0.8 !important;
+     font-weight: 550 !important;
+     background: none !important;
+     transition-property: background !important;
+     transition-duration: 0.2s !important;
+     transition-timing-function: ease-in-out !important;
+
+     &:hover {
+         background: $highlight !important;
+     }
 }

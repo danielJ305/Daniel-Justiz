@@ -52,14 +52,13 @@
         font-size: $m-size * 0.8;
         font-weight: 500;
         cursor: pointer;
-        transition-property: color;
-        transition-duration: 0.2s;
-        transition-timing-function: ease-in-out;
+        transition: all 0.2s ease-out;
         color: $dark;
+        font-weight: 600;
     }
 
     & a:hover {
-        color: #949494;
+        color: #7b7b7b;
     }
 }
 
@@ -68,6 +67,19 @@
         @extend %button;
         color: $light;
         background: $dark;
+        transition: all 0.2s ease-in;
+
+        &:hover {
+            background: $light !important;
+            color: $dark;
+            box-shadow: inset 0 0 3.9px $dark !important;
+        }
+
+        svg {
+            &:hover {
+                color: $dark;
+            }
+        }
     }
 }
 

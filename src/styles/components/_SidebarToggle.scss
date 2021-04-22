@@ -63,7 +63,7 @@
 // *********** Side bar Logo **//
 
 .sidebar-logo {
-    position: absolute !important;
+    position: fixed !important;
     top: 2rem;
     right: -10rem;
     transition-property: right;
@@ -73,4 +73,10 @@
 
 .sidebar-logo-open {
     right: 3rem;
+}
+
+@media only screen and (max-width : 1223px) {
+    .sidebar-logo {
+        display: none;
+    }
 }

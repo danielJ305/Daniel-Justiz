@@ -9,6 +9,7 @@
 
 .work__subtitle {
     font-size: $m-size + 0.2rem;
+    color: $highlight !important;
 }
 
 .work-header--toggle-section {
@@ -21,7 +22,12 @@
     margin: 0 1rem;
 
     svg {
-        color: $dark ;
+        color: $dark;
+        transition: all 0.2s ease-in;
+
+        &:hover {
+            color: $light;
+        }
     }
 }
 
