@@ -1,27 +1,27 @@
 import React from 'react';
 import WorkProject from './WorkProject';
 import fiuImg from '../../public/Media/fiu-mockup1.jpg';
-import noteTaking from '../../public/Media/notetakingapp.jfif'
+import homeCare from '../../public/Media/ParadiseHomeCare.jpg';
 
 class WorkDeveloper extends React.Component {
     project = {
         projects: [{
-            title: "FIU (Florida International University) Website Mockup",
-            description: "I decided to do a mockup of the FIU Website because it enabled me to showcase my abilities to make a fully responsive and interactive website from scratch. Website",
-            tools: ['HTML', 'SASS', 'Bootstrap4', 'Vanilla Js'],
-            gitLink: 'https://github.com/danielJ305/FIU-Mockup-Website',
-            link: 'https://danielj305.github.io/FIU-Mockup-Website/',
-            img: fiuImg
-        },
-        {
-            title: "Note Taking App Practice Project",
-            description: "The reason I made this project was because it allowed me to further keep practicing what I've previously learned in Javascript.",
-            tools: ['REACT', 'SASS'],
-            gitLink: 'https://github.com/danielJ305/Note-Taking-App',
-            link: 'https://danielj305.github.io/Note-Taking-App/Source/app.html',
-            img: noteTaking
-
-        }]
+                title: "Paradise Home Care Website",
+                description: "This Website is for a Miami-based client's elderly care business. The site is still under construction, waiting for the home to be finished being constructed.",
+                tools: ['HMTL', 'SASS', 'Javascript', 'NodeJS Handlebars'],
+                gitLink: 'https://github.com/danielJ305/RetirementHome',
+                link: 'https://justiz-paradisehome-website.herokuapp.com/',
+                img: homeCare
+            },
+            {
+                title: "FIU (Florida International University) Website Mockup",
+                description: "After learning HTML/CSS/Javascript this was one of the first personal projects I built. A replica of the FIU Website back in 2018. Fully responsive and an exact mockup of the actual 2018 website.",
+                tools: ['HTML', 'SASS', 'Bootstrap4', 'Vanilla JS'],
+                gitLink: 'https://github.com/danielJ305/FIU-Mockup-Website',
+                link: 'https://danielj305.github.io/FIU-Mockup-Website/',
+                img: fiuImg
+            }
+        ]
     } 
 
     render = () => (

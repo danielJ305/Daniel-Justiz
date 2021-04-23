@@ -4,7 +4,7 @@ import { AiFillGithub, AiOutlineLink } from "react-icons/ai";
 const WorkProject = (props) => (
     <div className="work-project">
         <div className="project--image-container">
-            <img className="project__image" src={props.img} />
+            <a href={props.link} target="_blank"><img className="project__image" src={props.img} /></a>
         </div>
         <div className="project--text">
             <h4 className="project--text__subtitle">Featured Project</h4>

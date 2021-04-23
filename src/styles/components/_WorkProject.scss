@@ -10,7 +10,7 @@
 
 .project--image-container {
     max-width: 55rem;
-
+    flex: 1;
 }
 
 .project__image {
@@ -26,7 +26,7 @@
 .project--text {
     padding: 0 0 0 2rem;
     text-align: right;
-
+    flex: 1;
 }
 
 // .project--text:nth-child(even) {
@@ -59,7 +59,7 @@
 // }
 
 .project--text__tool {
-    padding:2rem 0 0 1.8rem;
+    padding:2rem 0 0 1.6rem;
     font-size: $m-size * 0.9;
     font-weight: 600;
 }
@@ -67,7 +67,7 @@
 .project--text__icon {
     font-size: 3.3rem;
     color:$highlight;
-    padding:2rem 0 0 1.5rem;
+    padding:2rem 0 0 1.6rem;
     transition-property: color;
     transition-duration: 0.2s;
 }
@@ -103,5 +103,13 @@
 
     .project--text__description {
         margin-left: 0;
+    }
+
+    .project--text__tool {
+        padding: 2rem 1.6rem 0 0;
+    }
+
+    .project--text__icon {
+        padding: 2rem 1.6rem 0 0;
     }
 }
