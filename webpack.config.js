@@ -20,7 +20,7 @@ module.exports = {
                 'sass-loader'
             ] // use allows us to set up an array of loaders
         }, {
-            test: /\.(png|jpe?g|gif|jfif)$/i,
+            test: /\.(png|jpe?g|gif|jfif|pdf)$/i,
             use: [
                 {
                     loader: 'file-loader'

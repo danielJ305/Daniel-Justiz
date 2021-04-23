@@ -16,6 +16,8 @@
     box-sizing: border-box;
     padding: 2rem 2rem 2rem 3rem;
 
+    -webkit-box-shadow: 4px 0px 10px 1px rgba(0, 0, 0, 0.5);
+    box-shadow: 4px 0px 10px 1px rgba(0, 0, 0, 0.5);
 }
 
 .sidebar--top-container {
@@ -32,6 +34,13 @@
         padding-bottom: 2rem;
         cursor: pointer;
         color: $dark;
+
+        svg {
+
+            &:hover {
+                color:$highlight;
+            }
+        }
     }
 }
 
@@ -47,18 +56,19 @@
     text-align: right;
 
     & a {
-        padding-right: 5px;
-        padding-bottom: $xl-size;
+        padding: 5px;
+        margin-bottom: $xl-size;
         font-size: $m-size * 0.8;
         font-weight: 500;
         cursor: pointer;
         transition: all 0.2s ease-out;
         color: $dark;
         font-weight: 600;
+        text-decoration: none;
     }
 
     & a:hover {
-        color: #7b7b7b;
+        color: #acacac;
     }
 }
 
@@ -92,10 +102,11 @@
     a {
         font-weight: 600;
         color: $dark;
+        text-decoration: none;
     }
 
     p {
-        color: $dark;
+        color: $dark !important;
     }
 
     .bottom-container__resume {
@@ -104,6 +115,12 @@
         margin-bottom: 2rem;
         color: $dark;
         border-color: $dark;
+    }
+
+    .bottom-container__email {
+        &:hover {
+            color: $highlight;
+        }
     }
 }
 

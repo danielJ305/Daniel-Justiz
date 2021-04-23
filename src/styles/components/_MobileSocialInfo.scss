@@ -16,6 +16,13 @@
         font-size: 3.5rem;
         cursor: pointer;
         padding: 0 2rem 0 2rem;
+
+        svg {
+
+            &:hover {
+                color: $highlight;
+            }
+        }
     }
 }
 
@@ -33,6 +40,13 @@
         margin-top:3rem;
         margin-bottom:3rem;
 
+    }
+
+    .info__email {
+        font-weight: 600;
+        cursor: pointer;
+        text-decoration: none;
+        color: $light;
     }
 }
 

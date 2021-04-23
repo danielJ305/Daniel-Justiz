@@ -1,4 +1,5 @@
 import React from 'react';
+import Fade from 'react-reveal/Fade';
 import WorkHeader from './WorkHeader';
 import WorkDeveloper from './WorkDeveloper';
 import WorkGraphic from './WorkGraphic';
@@ -13,6 +14,7 @@ class WorkShowcase extends React.Component {
     }
 
     render = () => (
+        <Fade bottom duration={1000} delay={300}>
         <div>
             <WorkHeader
                 state={this.state.active}
@@ -21,6 +23,7 @@ class WorkShowcase extends React.Component {
             { this.state.active ? <WorkDeveloper /> : <WorkGraphic />}
 
         </div>
+        </Fade>
     ) 
 }
 

@@ -86,6 +86,12 @@
     .experience__job--skills {
         margin: 0;
         margin-top: 3rem;
+        background: transparentize($dark, 0.08);
+        color: $light;
+
+        h3 {
+            color: $light;
+        }
     }
 
 }

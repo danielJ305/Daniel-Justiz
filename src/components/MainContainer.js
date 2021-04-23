@@ -1,6 +1,6 @@
 import React from 'react';
+import Fade from 'react-reveal/Fade';
 import Logo from '../../public/Media/DJ-logo-01.svg';
-
 import AboutIntro from './AboutIntro'
 import AboutMe from './AboutMe';
 import Experience from './Experience';
@@ -13,27 +13,29 @@ class MainContainer extends React.Component {
 
     render = () => (
         <div className="main-container">
-            <div className="main-container__logo">
-                <Logo className="logo" />
-            </div>
+            <Fade>
+                <div className="main-container__logo">
+                    <Logo className="logo" />
+                </div>
+            </Fade>
             <div className="about">
-                <div className="about--section about--section-intro">
+                <div id="about-intro" className="about--section about--section-intro">
                     <AboutIntro />
                 </div>
-                <div className="about--section about--section-aboutme">
+                <div id="about-me" className="about--section about--section-aboutme">
                     <AboutMe />
                 </div>
-                <div className="about--section about--section-experience">
+                <div id="experience" className="about--section about--section-experience">
                     <Experience />
                 </div>
             </div>
-            <div className="work-showcase">
+            <div id="work" className="work-showcase">
                 <WorkShowcase />
             </div>
             <div className="mobile-social-info">
                 <MobileSocialInfo />
             </div>
-            <div className="contact">
+            <div id="contact" className="contact">
                 <ContactMe />
             </div>
             <div className="footer">

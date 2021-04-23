@@ -14,3 +14,36 @@ a.resume-container__button {
     padding-left: 1.5rem !important;
     padding-right: 1.5rem !important;
 }
+
+//** Button **//
+a.resume-container__button {
+    color: $highlight !important;
+
+    &:hover {
+        color: $dark !important;
+    }
+}
+
+//** Sidebar **//
+.sc-gsDJrp.fSsOcI {
+    background: lighten($dark, 3%);
+    -webkit-box-shadow: 4px 0px 10px 1px rgba(0, 0, 0, 0.5) !important;
+    box-shadow: 4px 0px 10px 1px rgba(0, 0, 0, 0.5) !important;
+}
+
+@media only screen and (max-device-width : 415px) {
+    .sc-gsDJrp.fSsOcI {
+        padding: 0 !important;
+    }
+}
+
+//** Mobile links **//
+.sc-gsDJrp.fSsOcI {
+
+    a {
+        
+        &:hover {
+            color: $highlight-hover !important;
+        }
+    }
+}
