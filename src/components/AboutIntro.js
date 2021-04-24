@@ -9,8 +9,8 @@ const AboutIntro = () => (
             <h1>Daniel Justiz</h1>
             <h2>I build things for the web.</h2>
             <p>I'm a Miami-based Web Developer who specializes in building
-                digital experiences. Currently, I'm an engineer at Upstatement
-                focused on building accessible, human-centered products.</p>
+                digital experiences. Currently, I'm a Web Designer & Content Creator at <span className="highlight">Freight Hub Group </span>
+                focused on building accessible, B2B interactions.</p>
             <a>
             <Link 
                 to="contact"

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const StyledBurger = styled.nav`
-    position: absolute;
+    position: fixed;
     top: 3rem;
     right: 3rem;
     display: none;

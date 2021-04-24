@@ -1,25 +1,18 @@
 import React from 'react';
 import Fade from 'react-reveal/Fade';
-import morty from '../../public/Media/Morty.png'
+import morty from '../../public/Media/Morty.png';
+import me from '../../public/Media/me.jpg'
 
 const AboutMe = () => (
     <Fade bottom cascade duration={600} delay={300}>
         <div className="aboutme-wrapper">
             <div className="aboutme--text">
                 <h2>About Me</h2>
-                <p>Hello, I'm a Web Developer, I have a diverse set of skills,
-                    ranging from Graphic Design to Web Development. Every day I
-                    get better and I'm one step closer to becoming a software engineer.
-                    I always keep busy and when I'm not working, I like to read, exercise, 
-                    and do outdoor activities.</p>
-                <p>Hello, I'm a Web Developer, I have a diverse set of skills,
-                    ranging from Graphic Design to Web Development. Every day I
-                    get better and I'm one step closer to becoming a software engineer.
-                    I always keep busy and when I'm not working, I like to read, exercise, 
-                    and do outdoor activities.</p>
+                <p>Hello, my name is Daniel and I have a diverse set of skills, ranging from Graphic Design to Web Development. Although I have a good eye for design, my career interests strongly pivot towards programming.</p>
+                <p>Every day I get better and every day I'm one step closer to becoming a software engineer. I often welcome new challenges into my life,  I always keep busy and when I'm not working, I like to read, exercise, and do outdoor activities.</p>
             </div>
             <div className="aboutme--image">
-                <img src={morty} />
+                <img src={me} />
             </div>
         </div>
     </Fade>

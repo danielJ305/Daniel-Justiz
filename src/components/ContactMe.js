@@ -6,9 +6,7 @@ const ContactMe = () => (
         <div className="contact-wrapper">
             <h4 className="contact__subtitle">Like what you see?</h4>
             <h2 className="contact__title">Get In Touch</h2>
-            <p className="contact__text">Although I'm not currently looking for any new opportunities,
-            my inbox is always open. Whether you have a question or just
-            want to say hi, I'll try my best to get back to you!</p>
+            <p className="contact__text">If you would like to collaborate or just say hi, click the button below to send me an email. I am available for hire.</p>
             <a href="mailto:danieljustiz9508@gmail.com"><button className="contact__button">Say Hello</button></a>
         </div>
     </Fade>
