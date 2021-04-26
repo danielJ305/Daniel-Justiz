@@ -1,6 +1,5 @@
 import React from 'react';
 import Fade from 'react-reveal/Fade';
-import morty from '../../public/Media/Morty.png';
 import me from '../../public/Media/me.jpg'
 
 const AboutMe = () => (
