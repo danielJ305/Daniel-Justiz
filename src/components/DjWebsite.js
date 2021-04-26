@@ -1,5 +1,4 @@
 import React from 'react';
-// import background from '../../public/Media/dark-BG-texture.jpg';
 import Sidebar from './Sidebar';
 import MainContainer from './MainContainer';
 import SidebarToggle from './SidebarToggle';
@@ -32,8 +31,6 @@ export default class DjWebsite extends React.Component {
             sidebarLogo.classList.remove('sidebar-logo-open');
         }
     }
-
-    // style={{ backgroundImage: `url(${background})` }}
     
     render = () => (
         <div className="main-body-wrapper" >

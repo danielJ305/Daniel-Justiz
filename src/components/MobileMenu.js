@@ -2,7 +2,7 @@ import React from 'react';
 import { Link, animateScroll as scroll } from "react-scroll";
 import { bool } from 'prop-types';
 import { StyledMenu } from './StyledMenu';
-import pdf from '../../public/Media/DanielResume-compressed.pdf';
+import pdf from '../../public/Media/DanielResumeV2.pdf';
 
 const MobileMenu = ({open}) => (
     <StyledMenu open={open} >

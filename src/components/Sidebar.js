@@ -2,7 +2,7 @@ import React from 'react';
 import Fade from 'react-reveal/Fade';
 import { Link, animateScroll as scroll } from "react-scroll";
 import Logo from '../../public/Media/DJ-logo-01.svg';
-import pdf from '../../public/Media/DanielResume-compressed.pdf';
+import pdf from '../../public/Media/DanielResumeV2.pdf';
 
 import { RiArrowDropLeftFill, RiBehanceFill, RiGithubFill, RiInstagramLine, RiLinkedinBoxLine } from "react-icons/ri";
 
@@ -11,7 +11,7 @@ const Sidebar = (props) => (
         <div className="sidebar--top-container">
             <Fade bottom cascade delay={0}>
                 <div className="top-container__social-list">
-                    <a href="https://www.linkedin.com/feed/" target="_blank"><RiLinkedinBoxLine/></a>
+                    <a href="https://www.linkedin.com/in/daniel-justiz-a76a3218a/" target="_blank"><RiLinkedinBoxLine/></a>
                     <a href="https://github.com/danielJ305" target="_blank"><RiGithubFill/></a>
                     <a href="https://www.instagram.com/danieljustfish/" target="_blank"><RiInstagramLine/></a>
                     <a href="https://www.behance.net/danieljustizMedia/" target="_blank"><RiBehanceFill/></a>

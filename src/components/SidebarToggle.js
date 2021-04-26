@@ -5,7 +5,7 @@ import { RiArrowDropRightFill, RiBehanceFill, RiGithubFill, RiInstagramLine, RiL
 const SidebarToggle = (props) => (
     <div className="sidebar-toggle">
         <div className="top-container__social-list sidebar-toggle__social-list">
-            <a href="https://www.linkedin.com/feed/" target="_blank"><RiLinkedinBoxLine/></a>
+            <a href="https://www.linkedin.com/in/daniel-justiz-a76a3218a/" target="_blank"><RiLinkedinBoxLine/></a>
             <a href="https://github.com/danielJ305" target="_blank"><RiGithubFill/></a>
             <a href="https://www.instagram.com/danieljustfish/" target="_blank"><RiInstagramLine/></a>
             <a href="https://www.behance.net/danieljustizMedia/" target="_blank"><RiBehanceFill/></a>
