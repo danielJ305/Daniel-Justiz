@@ -1,4 +1,9 @@
 import React from 'react';
+
+//** React Google Analytics **//
+import ReactGA from 'react-ga';
+//** ___________________________________________________________ **/
+
 import Sidebar from './Sidebar';
 import MainContainer from './MainContainer';
 import SidebarToggle from './SidebarToggle';
@@ -9,6 +14,14 @@ export default class DjWebsite extends React.Component {
     // Desktop Sidebar   
     state = {
         sidebarOpened: true,
+    }
+
+    clickedToggleSidebar = () => {
+        ReactGA.event({
+            category: 'User',
+            action: 'Sidebar Toggled',
+            label: 'Sidebar'
+        });
     }
 
     sidebarToggle = () => {
@@ -30,6 +43,8 @@ export default class DjWebsite extends React.Component {
             mainContainer.classList.remove('main-container--center');
             sidebarLogo.classList.remove('sidebar-logo-open');
         }
+
+        clickedToggleSidebar();
     }
     
     render = () => (

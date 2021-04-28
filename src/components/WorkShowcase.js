@@ -1,4 +1,9 @@
 import React from 'react';
+
+//** React Google Analytics **//
+import ReactGA from 'react-ga';
+//** ___________________________________________________________ **/
+
 import Fade from 'react-reveal/Fade';
 import WorkHeader from './WorkHeader';
 import WorkDeveloper from './WorkDeveloper';
@@ -9,8 +14,18 @@ class WorkShowcase extends React.Component {
         active: true
     }
 
+    clicked = () => {
+        ReactGA.event({
+            category: 'User',
+            action: 'Work Section Toggled',
+            label: 'My Work'
+        });
+    }
+
     workToggler = () => {
         this.setState(() => ({ active: !this.state.active }))
+
+        this.clicked();
     }
 
     render = () => (
