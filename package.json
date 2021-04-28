@@ -1,6 +1,6 @@
 {
   "name": "DanielJustiz-website-v2",
-  "homepage": "https://www.danieljustiz.com/",
+  "homepage": "http://www.danieljustiz.com/",
   "version": "1.0.0",
   "description": "Personal Website / Portfolio",
   "main": "app.js",

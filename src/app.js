@@ -26,7 +26,7 @@ window.addEventListener('resize', () => {
 function App() {
 
   useEffect(() => {
-    ReactGA.initialize('G-ENTGMWKJVX')
+    ReactGA.initialize('UA-195821893-1')
 
     // to report page view
     ReactGA.pageview('/');
