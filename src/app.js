@@ -1,9 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 //** React Google Analytics **//
 import ReactGA from 'react-ga';
-ReactGA.initialize('G-ENTGMWKJVX');
-ReactGA.pageview(window.location.pathname + window.location.search);
 //** ___________________________________________________________ **/
 
 import ReactDOM from 'react-dom';
@@ -22,5 +20,22 @@ window.addEventListener('resize', () => {
   let vh = window.innerHeight * 0.01;
   document.documentElement.style.setProperty('--vh', `${vh}px`);
 });
+/** __________________________________________________________  **/
 
-ReactDOM.render(<DjWebsite />, document.getElementById('app'));
+
+function App() {
+
+  useEffect(() => {
+    ReactGA.initialize('G-ENTGMWKJVX')
+
+    // to report page view
+    ReactGA.pageview('/');
+  }, [])
+
+  return (
+    <DjWebsite />
+  )
+}
+
+
+ReactDOM.render(<App />, document.getElementById('app'));
