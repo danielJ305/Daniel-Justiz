@@ -1,4 +1,11 @@
 import React from 'react';
+
+//** React Google Analytics **//
+import ReactGA from 'react-ga';
+ReactGA.initialize('G-ENTGMWKJVX');
+ReactGA.pageview(window.location.pathname + window.location.search);
+//** ___________________________________________________________ **/
+
 import ReactDOM from 'react-dom';
 import DjWebsite from './components/DjWebsite';
 import 'normalize.css/normalize.css';
