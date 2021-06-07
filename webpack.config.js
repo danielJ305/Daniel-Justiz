@@ -1,5 +1,7 @@
 // entry -> output
 const path = require('path');
+const CompressionPlugin = require("compression-webpack-plugin");
+
 
 module.exports = {
     entry: './src/app.js',
@@ -29,12 +31,19 @@ module.exports = {
         }, {
             test: /\.svg$/,
             use: ['@svgr/webpack'],
-      }]
+        }
+    ]
     },
     devtool: 'eval-cheap-module-source-map',
     devServer: {
         contentBase: path.join(__dirname, 'public'),
         compress: true,
         port: 8080
-    }
+    },
+    plugins: [
+        new CompressionPlugin({
+            test: /\.js(\?.*)?$/i,
+            exclude: /node_modules/
+        }),
+    ],
 };
