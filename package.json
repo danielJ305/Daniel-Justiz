@@ -3,7 +3,7 @@
   "homepage": "http://www.danieljustiz.com/",
   "version": "1.0.0",
     "engines": {
-    "node": "6.11.1"
+    "node": "14.17.1"
   },
   "description": "Personal Website / Portfolio",
   "main": "app.js",
