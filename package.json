@@ -1,8 +1,8 @@
 {
-  "name": "DanielJustiz-website-v2",
+  "name": "danieljustiz-website-v2",
   "homepage": "http://www.danieljustiz.com/",
   "version": "1.0.0",
-    "engines": {
+  "engines": {
     "node": "14.17.1"
   },
   "description": "Personal Website / Portfolio",
@@ -48,5 +48,13 @@
     "webpack": "^5.30.0",
     "webpack-cli": "^4.6.0",
     "webpack-dev-server": "^3.11.2"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielJ305/Daniel-Justiz.git"
+  },
+  "bugs": {
+    "url": "https://github.com/danielJ305/Daniel-Justiz/issues"
   }
 }
