@@ -1,6 +1,11 @@
 import React from 'react';
 import Gallery from 'react-grid-gallery';
 
+import prairieLogo from '../../public/Media/Graphics/AndrewWeeks-Logo-PaperA4-2W.jpg'; 
+import prairieLogos from '../../public/Media/Graphics/AndrewWeeks-Logo-PaperA4.jpg'; 
+import whitfieldLogo from '../../public/Media/Graphics/Logo_Mockup_84.jpg';
+import shirtP1 from '../../public/Media/Graphics/T-Shirt-Mock-Up-Back.jpg';
+import shirtP2 from '../../public/Media/Graphics/T-Shirt-Mock-Up-Back2.jpg';
 import lous from '../../public/Media/Graphics/lous-hoby.jpg';
 import learn from '../../public/Media/Graphics/learn_v2.jpg';
 import moving from '../../public/Media/Graphics/WeAreMoving.jpg';
@@ -18,6 +23,48 @@ import pdf3 from '../../public/Media/Graphics/PDF3.jpg';
 
 export default class WorkGraphic extends React.Component {
     IMAGES = [
+            {
+            src: prairieLogo,
+            thumbnail: prairieLogo,
+            thumbnailWidth: 320,
+            thumbnailHeight: 174,
+            caption: "Prairie Turf Pros"
+        },
+        {
+            src: prairieLogos,
+            thumbnail: prairieLogos,
+            thumbnailWidth: 320,
+            thumbnailHeight: 212,
+            caption: "Prairie Turf Pros client options"
+        },
+        {
+            src: whitfieldLogo,
+            thumbnail: whitfieldLogo,
+            thumbnailWidth: 320,
+            thumbnailHeight: 212,
+            caption: "Whitfield Construction"
+        },
+        {
+            src: shirtP1,
+            thumbnail: shirtP1,
+            thumbnailWidth: 220,
+            thumbnailHeight: 174,
+            caption: "Patriotic T-Shirt Design"
+        },
+        {
+            src: shirtP2,
+            thumbnail: shirtP2,
+            thumbnailWidth: 320,
+            thumbnailHeight: 212,
+            caption: "Patriotic T-Shirt Design"
+        },
+        {
+            src: logistics,
+            thumbnail: logistics,
+            thumbnailWidth: 320,
+            thumbnailHeight: 174,
+            caption: "Logistics Hub"
+        },
         {
             src: lous,
             thumbnail: lous,
