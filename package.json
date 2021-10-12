@@ -4,6 +4,9 @@
   "version": "1.0.0",
   "description": "Personal Website / Portfolio",
   "main": "app.js",
+  "engines": {
+    "node": "14.17.1"
+  },
   "scripts": {
     "serve": "live-server public/",
     "build": "webpack",
