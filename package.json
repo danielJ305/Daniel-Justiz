@@ -15,7 +15,6 @@
     "start": "node server/server.js",
     "heroku-postbuild": "npm run build"
   },
-  "heroku-postbuild": "npm run build",
   "author": "Daniel Justiz",
   "license": "ISC",
   "dependencies": {
