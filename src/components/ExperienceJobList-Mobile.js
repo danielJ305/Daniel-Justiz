@@ -69,19 +69,25 @@ export default function ScrollableTabsButtonAuto() {
           aria-label="scrollable auto tabs example"
         >
           <Tab label="Freight Hub Group" {...a11yProps(0)} />
+          <Tab label="Upwork" {...a11yProps(1)} />
         </Tabs>
       </AppBar>
       <TabPanel value={value} index={0}>
         <div className="experience__job--description"> 
-            <h3>Web Designer / Content Creator at</h3><h3>Freight Hub Group</h3>
-            <h4>October 2019 - Present</h4>
+            <h3>Web Designer/Developer & Content Creator at</h3><h3 className="highlight">Freight Hub Group</h3>
+            <h4>October 2019 - May 2021</h4>
             <ul>
-                <li className="job--description__list">My daily tasks vary depending on the monthly goal.</li>
-                <li className="job--description__list">Labor ranges from revamping custom written websites,
-                making new pages using builders such as WP-Bakery or Elementor
-                and Optimizing pages for optimal loadability on all devices.</li>
-                <li className="job--description__list">I am proffecient at graphic design and I use my skills to build their graphics,
-                banners, emails, catalogs, pdf's and more.</li>
+                <li className="job--description__list">While working for Freight Hub Group ( https://gofreighthub.io/ ) I had the responsibility of overseeing over 9 websites, all on the WordPress platform.</li>
+                <li className="job--description__list">I had the key role of creating many of the conversion and sales funnel pages for different departments of the company as well as revamping custom-written websites, planning and implementing new features, delivering new websites, optimization, and graphic design. </li>
+            </ul>
+        </div>
+      </TabPanel>
+      <TabPanel value={value} index={1}>
+        <div className="experience__job--description"> 
+            <h3>Web Designer/Developer & Graphic Designer at</h3><h3 className="highlight">UpWork</h3>
+            <h4>August 2021 - Present</h4>
+            <ul>
+                <li className="job--description__list">Discussing requirements with clients, making website development proposals, designing page layout, working with content management systems, making sure work follows the client’s branding policy, writing code, designing logos, illustrations, graphics and more.</li>
             </ul>
         </div>
       </TabPanel>

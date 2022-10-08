@@ -28,11 +28,11 @@ const WorkProject = (props) => {
                     {props.tools}
                 </div>
                 <div>
-                    <a onClick={clicked} href={props.gitLink} target="_blank">
+                    {props.gitLink && <a onClick={clicked} href={props.gitLink} target="_blank">
                         <AiFillGithub 
                             className="project--text__icon"
                         />
-                    </a>
+                    </a>}
                     <a onClick={clicked} href={props.link} target="_blank"> 
                         <AiOutlineLink
                             className="project--text__icon"

@@ -23,7 +23,7 @@ const AboutIntro = () => {
                 <h1>Daniel Justiz</h1>
                 <h2>I build things for the web.</h2>
                 <p>I'm a Miami-based Front-End Developer who specializes in building
-                    digital experiences. Currently, I'm a Web Designer & Content Creator at <span className="highlight">Freight Hub Group </span>
+                    digital experiences. I'm a Web Designer & Content Creator at <span className="highlight">Freight Hub Group </span>
                     focused on building accessible, B2B interactions.</p>
                 <a>
                 <Link 
