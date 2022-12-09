@@ -77,7 +77,7 @@ export default function ScrollableTabsButtonAuto() {
             <h3>Web Designer/Developer & Content Creator at</h3><h3 className="highlight">Freight Hub Group</h3>
             <h4>October 2019 - May 2021</h4>
             <ul>
-                <li className="job--description__list">While working for Freight Hub Group ( https://gofreighthub.io/ ) I had the responsibility of overseeing over 9 websites, all on the WordPress platform.</li>
+            <li className="job--description__list">While working for Freight Hub Group ( https://gofreighthub.io/ ) I had the responsibility of overseeing over 9 websites, all on the WordPress platform.</li>
                 <li className="job--description__list">I had the key role of creating many of the conversion and sales funnel pages for different departments of the company as well as revamping custom-written websites, planning and implementing new features, delivering new websites, optimization, and graphic design. </li>
             </ul>
         </div>
@@ -87,7 +87,7 @@ export default function ScrollableTabsButtonAuto() {
             <h3>Web Designer/Developer & Graphic Designer at</h3><h3 className="highlight">UpWork</h3>
             <h4>August 2021 - Present</h4>
             <ul>
-                <li className="job--description__list">Discussing requirements with clients, making website development proposals, designing page layout, working with content management systems, making sure work follows the client’s branding policy, writing code, designing logos, illustrations, graphics and more.</li>
+            <li className="job--description__list">Discussing requirements with clients, making website development proposals, designing page layout, working with content management systems, making sure work follows the client’s branding policy, writing code, designing logos, illustrations, graphics and more.</li>
             </ul>
         </div>
       </TabPanel>
