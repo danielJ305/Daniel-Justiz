@@ -1,6 +1,6 @@
 {
   "name": "danieljustiz-website-v2",
-  "homepage": "https://www.danieljustiz.com/",
+  // "homepage": "https://www.danieljustiz.com/",
   "version": "1.0.0",
   "description": "Personal Website / Portfolio",
   "main": "app.js",
@@ -13,7 +13,7 @@
     "build": "webpack",
     "dev-server": "webpack serve",
     "start": "node server/server.js",
-    "heroku-postbuild": "npm run build"
+    // "heroku-postbuild": "npm run build"
   },
   "author": "Daniel Justiz",
   "license": "ISC",
