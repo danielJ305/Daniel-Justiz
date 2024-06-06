@@ -9,7 +9,7 @@
   },
   "scripts": {
     "serve": "live-server public/",
-    "build": "webpack -mode production",
+    "build": "webpack --mode production",
     "dev-server": "webpack serve",
     "start": "webpack-dev-server --mode development"
   },
