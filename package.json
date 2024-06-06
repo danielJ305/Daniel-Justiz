@@ -9,9 +9,9 @@
   },
   "scripts": {
     "serve": "live-server public/",
-    "build": "webpack",
+    "build": "webpack -mode production",
     "dev-server": "webpack serve",
-    "start": "node server/server.js"
+    "start": "webpack-dev-server --mode development"
   },
   "author": "Daniel Justiz",
   "license": "ISC",
