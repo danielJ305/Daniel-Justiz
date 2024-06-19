@@ -1,0 +1,7 @@
+[build]
+  command = "npm install && npm run build"
+  publish = "build"
+  environment = { NPM_FLAGS = "--legacy-peer-deps" }
+
+[build.environment]
+  NODE_ENV = "production"

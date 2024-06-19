@@ -19,6 +19,10 @@ module.exports = {
             }
           },
           {
+            test: /\.css$/,
+            use: ['style-loader', 'css-loader']
+          },
+          {
             test: /\.scss$/,
             use: [
               'style-loader',
@@ -27,7 +31,18 @@ module.exports = {
             ]
           },
           {
-            test: /\.(png|jpg|gif)$/,
+            test: /\.(png|jpg|gif|svg)$/,
+            use: [
+              {
+                loader: 'file-loader',
+                options: {
+                  name: '[path][name].[ext]'
+                }
+              }
+            ]
+          },
+          {
+            test: /\.(pdf)$/,
             use: [
               {
                 loader: 'file-loader',
