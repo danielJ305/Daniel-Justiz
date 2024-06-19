@@ -4,7 +4,7 @@ import React, { useEffect } from 'react';
 import ReactGA from 'react-ga';
 //** ___________________________________________________________ **/
 
-import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
 import DjWebsite from './components/DjWebsite';
 import 'normalize.css/normalize.css';
 import './styles/styles.scss';
@@ -38,4 +38,6 @@ function App() {
 }
 
 
-ReactDOM.render(<App />, document.getElementById('app'));
+const container = document.getElementById('app');
+const root = createRoot(container);
+root.render(<App />);
