@@ -10,30 +10,35 @@ module.exports = {
         filename: 'bundle.js'
     },
     module: {
-        rules: [{
-            loader: 'babel-loader',
+        rules: [
+          {
             test: /\.js$/,
-            exclude: /node_modules/
-        }, {
-            test: /\.s?css$/,
+            exclude: /node_modules/,
+            use: {
+              loader: 'babel-loader'
+            }
+          },
+          {
+            test: /\.scss$/,
             use: [
-                'style-loader',
-                'css-loader',
-                'sass-loader'
-            ] // use allows us to set up an array of loaders
-        }, {
-            test: /\.(png|jpe?g|gif|jfif|pdf)$/i,
-            use: [
-                {
-                    loader: 'file-loader'
-                }
+              'style-loader',
+              'css-loader',
+              'sass-loader'
             ]
-        }, {
-            test: /\.svg$/,
-            use: ['@svgr/webpack'],
-        }
-    ]
-    },
+          },
+          {
+            test: /\.(png|jpg|gif)$/,
+            use: [
+              {
+                loader: 'file-loader',
+                options: {
+                  name: '[path][name].[ext]'
+                }
+              }
+            ]
+          }
+        ]
+      },
     devtool: 'eval-cheap-module-source-map',
     devServer: {
         contentBase: path.join(__dirname, 'public'),
